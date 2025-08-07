@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {
-  final TextEditingController usernameController = TextEditingController();
-  final TextEditingController passwordController = TextEditingController();
+   TextEditingController usernameController = TextEditingController();
+   TextEditingController passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -71,7 +71,8 @@ class LoginScreen extends StatelessWidget {
                 // Login Button
                 ElevatedButton(
                   onPressed: () {
-                    // Login logic here
+                    print(usernameController.text);
+                    print(passwordController.text);
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
